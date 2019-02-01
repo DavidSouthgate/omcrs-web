@@ -1,7 +1,15 @@
 version: '3'
 services:
   web:
-    ports:
-      - "80:80"
-    environment:
-      - BASE_URL=http://127.0.0.1/
+    labels:
+      - traefik.backend=uk.co.davidsouthgate.omcrs
+      - traefik.frontend.rule=Host:omcrs.davidsouthgate.co.uk
+      - traefik.docker.network=traefik
+      - traefik.port=80
+      - traefik.frontend.priority=10
+      - traefik.frontend.redirect.entryPoint=https
+    networks:
+      - traefik
+networks:
+  traefik:
+    external: true
