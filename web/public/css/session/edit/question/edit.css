@@ -1,0 +1,43 @@
+form.new .question:not(#question-mcq) {
+    display: none;
+}
+
+#add-more-choices {
+    width: 100%;
+}
+
+#allow-multiple-responses {
+    margin-top: 10px;
+}
+
+#add-more-button-container {
+    padding: 0;
+}
+
+.input-add-more-item.correct input {
+    background-color: #caffc6;
+}
+
+.input-add-more-item:not(.correct) button.incorrect {
+    display: none;
+}
+
+.input-add-more-item.correct button.correct {
+    display: none;
+}
+
+#screenshot {
+    max-width: 100%;
+    max-height: 500px;
+    margin-bottom: 10px;
+}
+
+.editquestionheader {
+    display: flex;
+    align-items:center;
+}
+
+#screenshotbutton a:link { color: #0075B0; }
+#screenshotbutton a:visited { color: #0075B0; }
+#screenshotbutton a:hover { color: #0075B0; }
+#screenshotbutton a:active { color: #0075B0; }

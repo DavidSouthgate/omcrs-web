@@ -1,0 +1,30 @@
+.windows-protected-pc img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.download {
+    margin-bottom: 10px;
+}
+
+.download .icon,
+.download .os,
+.download .version {
+    display: block;
+}
+
+.download .icon {
+    font-size: 50px;
+}
+
+.download .os {
+    font-size: 25px;
+}
+
+.code {
+    font-family: monospace;
+}
+
+.indent {
+    margin-left: 40px;
+}

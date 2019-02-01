@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    command: "/var/www/test.sh"
+    depends_on:
+      - "db"
+    restart: "no"
+  db:
+    restart: "no"

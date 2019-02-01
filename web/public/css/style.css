@@ -1,0 +1,272 @@
+body:not(.noHeaderFooter) {
+    padding-top: 5rem;
+}
+
+.jumbotron .display-3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.alert .close {
+    color: #808080;
+}
+
+.page-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+}
+
+    .page-header h1 {
+        font-family: sans-serif;
+        font-weight: normal;
+    }
+
+    .page-header .btn {
+        margin-top: 10px;
+    }
+
+
+
+html, body {
+    height: 100%;
+    background-color: #F7F7F7;
+    font-family: sans-serif;
+}
+
+    body #incompatible-browser {
+        background-color: yellow;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10000;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    body .navbar {
+        background-color: #563D7C!important;
+    }
+
+        body .navbar .navbar-toggler {
+            color: #fff;
+            border-color: #fff;
+            outline: 0;
+            cursor: pointer;
+        }
+
+            body .navbar .navbar-toggler .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+            }
+
+        body .navbar .navbar-text,
+        body .navbar a.nav-link,
+        body .navbar a.nav-link:link,
+        body .navbar a.nav-link:visited,
+        body .navbar a.nav-link:active {
+            color: #fff!important;
+            outline: 0;
+        }
+
+        body .navbar a.nav-link.disabled {
+            color: #868e96!important;
+        }
+
+        body .navbar .navbar-brand {
+            outline:none;
+        }
+
+            body .navbar .navbar-brand img {
+                height: 54px;
+            }
+
+        body .navbar .navbar-collapse.show {
+            margin-bottom: 10px;
+        }
+
+        body .navbar .nav-item .navbar-text {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    body main {
+        overflow:auto;
+        min-height: 100%;
+        background-color: #fff;
+    }
+
+    body main {
+
+        /* Footer Height (90px) + Padding (25px) */
+        padding-bottom:115px;
+    }
+
+    body.noHeaderFooter main {
+        padding-bottom:0;
+    }
+
+        body main #breadcrumb {
+            margin-top: 10px;
+            background-color: #e9ecef;
+            border-radius: .25rem;
+        }
+
+            body main #breadcrumb div.breadcrumb-right {
+                padding: 12px 16px 12px 16px;
+            }
+
+            body main #breadcrumb .btn {
+                color: #fff!important;
+            }
+
+        body main .jumbotron {
+            background-color: #F7F7F7;
+        }
+
+            body main .jumbotron h1 {
+                margin: 0;
+            }
+
+        body main .session-list {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+            body main .session-list li.no-sessions {
+                display: none;
+            }
+
+            body main .session-list li.no-sessions:only-child {
+                display: inline!important;
+            }
+
+            body main .session-list :nth-child(2) {
+                margin-top: 0;
+                border-top-right-radius: .25rem;
+                border-top-left-radius: .25rem;
+            }
+
+            body main .session-list .actions,
+            body main .session-list .confirm-delete {
+                margin-top: 5px;
+            }
+
+                    body main .session-list .actions button {
+
+                    }
+
+                    body main .session-list .confirm-delete button {
+                        width: 50%;
+                    }
+
+                    body main .session-list .list-group-item .session-number {
+                        color: #e18c85;
+                    }
+
+                    #sid{
+                        color: #e18c85;
+                    }
+                    body main .session-list .list-group-item .session-date {
+                        display: block;
+                    }
+
+        body main .error-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        body main ul.pagination li.page-item a {
+            outline: none;
+        }
+
+        #session-link:hover{
+            font-weight: bold;
+        }
+        #session-link-url:hover{
+            text-decoration: none;
+        }
+                #dragable{
+                font-size: 20px;
+                margin-right:5px;
+                color: black;
+                }
+
+body footer {
+    position: relative;
+    margin-top: -90px;
+    height: 90px;
+    clear:both;
+    padding-top:20px;
+    background-color: #F7F7F7;
+}
+
+.list-group > .list-group-item:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.element-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn-light-border {
+    border-color: #aaa!important;
+}
+
+.btn-danger-border {
+    border-color: #aa2935!important;
+}
+
+.display-none {
+    display: none;
+}
+
+ul.list-group li.list-group-item {
+    border-color: #bbb;
+}
+
+.width-full {
+    width: 100%!important;
+}
+
+@media (max-width: 576px) {
+    .width-xs-full {
+        width: 100%!important;
+    }
+
+    .margin-xs-bottom-10 {
+        margin-bottom: 10px;
+    }
+
+    .width-xs-50percent-2point5px {
+        width: calc(50% - 2.5px)!important;
+    }
+}
+
+#change-password {
+    margin-right: 15px
+}
+
+/******************************************************************************
+ * Bootstrap Pills Override for Help View
+ ******************************************************************************/
+
+.nav-pills > li > a.active {
+    background-color: #003865!important;
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}

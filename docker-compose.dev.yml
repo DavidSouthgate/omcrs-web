@@ -1,0 +1,39 @@
+version: '3'
+services:
+  web:
+    volumes:
+        - ./web:/var/www
+    ports:
+        - "4000:80"
+    environment:
+      - BASE_URL=http://127.0.0.1:4000/
+  phpmyadmin:
+    image: "phpmyadmin/phpmyadmin"
+    ports:
+        - "4001:80"
+    links:
+        - db
+    networks:
+        - internal
+  db:
+    ports:
+        - "4003:3306"
+  #analysis:
+  #  build: ./analysis
+  #  links:
+  #    - db
+  #  environment:
+  #      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+  #      - MYSQL_DATABASE=omcrs
+  #      - MYSQL_USER=omcrs
+  #      - MYSQL_PASSWORD=uGjVGpfVRfZnfLYybLkELnrdohEx3zepPYkk4vFh5kT4zKtXgNTqmSpr92EmSsGh
+  #      - MYSQL_HOST=db
+  #  networks:
+  #      - internal
+  #  restart: always
+  composer:
+    restart: "no"
+    image: "composer/composer:php5"
+    command: install
+    volumes:
+      - ./web:/app

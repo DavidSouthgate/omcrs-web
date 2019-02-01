@@ -1,0 +1,37 @@
+version: '3'
+services:
+  web:
+    build: ./web
+    ports:
+      - "80"
+    links:
+      - db
+    environment:
+      - MYSQL_DATABASE=omcrs
+      - MYSQL_USER=omcrs
+      - MYSQL_PASSWORD=uGjVGpfVRfZnfLYybLkELnrdohEx3zepPYkk4vFh5kT4zKtXgNTqmSpr92EmSsGh
+      - MYSQL_HOST=db
+      - BASE_URL=http://127.0.0.1/
+    volumes:
+        - ./web/docker/log:/var/www/docker/log
+    networks:
+        - internal
+    restart: always
+  db:
+    image: "mysql:5"
+    environment:
+        - MYSQL_RANDOM_ROOT_PASSWORD=yes
+        - MYSQL_DATABASE=omcrs
+        - MYSQL_USER=omcrs
+        - MYSQL_PASSWORD=uGjVGpfVRfZnfLYybLkELnrdohEx3zepPYkk4vFh5kT4zKtXgNTqmSpr92EmSsGh
+    volumes:
+        - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+        - database:/var/lib/mysql
+    networks:
+        - internal
+    restart: always
+networks:
+  internal:
+    external: false
+volumes:
+  database:

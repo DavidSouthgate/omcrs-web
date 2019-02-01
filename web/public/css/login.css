@@ -1,0 +1,44 @@
+#login {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#login .loginGroup {
+    margin-top: 10px;
+}
+
+#login .loginGroup input {
+    box-shadow: none;
+}
+
+#login .loginGroup input:first-of-type:not(:only-of-type) {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#login .loginGroup input:last-of-type:not(:only-of-type) {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#login .loginGroup input:not(:first-of-type):not(:last-of-type):not(:only-of-type) {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+#login button {
+    margin-top: 10px;
+
+}
+
+#login #anonymous {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+#alert {
+    margin-top: 10px;
+}

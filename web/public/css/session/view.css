@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+
+    #answer-update,
+    #answer-submit,
+    #check-new-question {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #question-navigation,
+    #question-navigation, #question-pagination {
+        width: 100%;
+    }
+
+        #question-pagination ul.pagination li.page-item {
+            width: 100%;
+            text-align: center;
+        }
+}

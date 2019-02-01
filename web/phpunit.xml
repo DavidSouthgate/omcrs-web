@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="src/classes/autoload.php" stopOnFailure="false" syntaxCheck="true" colors="true">
+    <testsuite name="omcrs">
+        <directory>tests</directory>
+    </testsuite>
+</phpunit>

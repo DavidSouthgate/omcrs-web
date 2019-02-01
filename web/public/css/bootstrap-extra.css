@@ -1,0 +1,66 @@
+/********************************************************************
+ * Input Add More
+ ********************************************************************/
+
+.input-add-more-container > :not(:last-child) .input-add-more-input {
+    border-bottom: none!important;
+}
+
+.input-add-more-container > :first-child > :first-child {
+    border-top-left-radius: .25rem!important;
+}
+
+.input-add-more-container > :first-child > :last-child {
+    border-top-right-radius: .25rem!important;
+}
+
+.input-add-more-container > :last-child > :first-child {
+    border-bottom-left-radius: .25rem!important;
+}
+
+.input-add-more-container > :last-child > :last-child {
+    border-bottom-right-radius: .25rem!important;
+}
+
+.input-add-more-container .input-add-more-item .input-add-more-input {
+    border-radius: 0;
+}
+
+.input-add-more-container .input-add-more-item > :first-child {
+    border-right: none;
+}
+
+.input-add-more-container .input-add-more-item > :not(:first-child):not(:last-child) {
+    border-radius: 0;
+    border-right: none;
+}
+
+.input-add-more-button {
+    margin-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/********************************************************************
+ * Confirm Delete
+ ********************************************************************/
+
+.confirm-delete {
+    display: none;
+}
+
+/********************************************************************
+ * Nav Tabs
+ ********************************************************************/
+
+a.nav-link {
+    outline: 0;
+}
+
+ul.nav-tabs {
+    margin-bottom: 10px;
+}
+
+.table-nonfluid {
+    width: auto !important;
+}

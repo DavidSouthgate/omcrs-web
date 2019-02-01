@@ -1,0 +1,110 @@
+body main #add-question-row #add-question-select-row {
+    padding-right: 5px;
+}
+
+body main #add-question-row #add-question-submit-row {
+    padding-left: 5px;
+}
+
+    body main #add-question-row #add-question-submit-row button {
+        width: 100%;
+    }
+
+@media (max-width: 576px) {
+    body main #add-question-row #add-question-select-row {
+        padding-right: 15px;
+    }
+
+    body main #add-question-row #add-question-submit-row {
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+}
+
+body main .question-list {
+    list-style-type: none;
+}
+
+    body main .question-list li.active-question {
+        background-color: #caffc6!important;
+    }
+
+    body main .question-list li.no-questions {
+        display: none;
+    }
+
+    body main .question-list li.no-questions:only-child {
+        display: inline!important;
+    }
+
+    body main .question-list li.question-item {
+    }
+
+    /** Color of line when dragging question */
+    body main .question-list li.question-item.over {
+        border-top: 2px solid grey;
+    }
+
+    /** Change opacity when dragging question */
+    body main .question-list li.question-item.dragElem {
+        /*opacity: 0.4;*/
+    }
+
+        body main .question-list li.question-item .drag {
+            line-height: 50px;
+            padding-left: 5px;
+            text-align: right;
+            font-size: 18px;
+            color: #868e96;
+        }
+
+        body main .question-list li.question-item .question-number {
+            line-height: 50px;
+            margin-right: 10px;
+        }
+
+        body main .question-list li.question-item:not(.active-question) .question-timer {
+            display: none;
+        }
+
+        body main .question-list li.question-item .question-timer {
+            color: red;
+            font-weight: bold;
+        }
+
+        body main .question-list li.question-item .actions,
+        body main .question-list li.question-item .confirm-delete {
+            margin-top: 5px;
+        }
+
+        body main .question-list li.question-item.active-question .activate {
+            display: none;
+        }
+
+        body main .question-list li.question-item:not(.active-question) .deactivate {
+            display: none;
+        }
+
+        body main .question-list :nth-child(2) {
+            margin-top: 0;
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+        }
+
+        /* Ensures "Make Active" button always has rounded left */
+        body main .question-list .activate {
+            border-top-left-radius: .25rem!important;
+            border-bottom-left-radius: .25rem!important;
+        }
+
+body main #activate-deactivate-all {
+    /*
+    padding-left: 21px;
+    padding-right: 21px;
+    */
+}
+
+    body main #activate-deactivate-all #activate-all,
+    body main #activate-deactivate-all #deactivate-all {
+        margin-top: 10px;
+    }
